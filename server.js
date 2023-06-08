@@ -29,6 +29,11 @@ app.use(fileUpload({
 
 // routes ---------------------------------
 
+//homepage
+app.get('/', (req, res) => {
+res.send("Home")
+})
+
 // auth
 const authRouter = require('./routes/auth')
 app.use('/auth', authRouter)
